@@ -1,7 +1,7 @@
 !!source ~/.cache/wal/colors.sh 
 
 Xcursor.size : 32
-Xft.dpi: 120
+Xft.dpi: 144
 
 ! Dracula Xresources palette
 *.foreground: #F8F8F2

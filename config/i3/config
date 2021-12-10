@@ -1,7 +1,7 @@
 set $mod Mod4
 set $alt Mod1
 
-font pango:monospace 16
+font pango:monospace 13
 
 # Gaps
 gaps inner 0
@@ -18,7 +18,7 @@ bindsym $mod+Shift+x gaps inner all minus 5
 # client.background       #2B2C2B
  
 # class                   	border  backgr. text    indic.   child_border
-client.focused				#aaff7f #2f343f #d8dee8 #d8dee8 #aaff7f
+client.focused				#aaff7f #2f343f #d8dee8 #aaff7f #aaff7f
 client.focused_inactive		#7c00ba #2f343f #d8dee8 #2f343f #7c00ba
 client.unfocused			#7c00ba #2f343f #d8dee8 #2f343f #7c00ba
 client.urgent				#7c00ba #2f343f #d8dee8 #2f343f #7c00ba
@@ -97,15 +97,15 @@ bindsym $mod+d focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
+set $ws1 "1:I"
+set $ws2 "2:II"
+set $ws3 "3:III"
+set $ws4 "4:IV"
+set $ws5 "5:V"
+set $ws6 "6:VI"
+set $ws7 "7:VII"
+set $ws8 "8:VIII"
+set $ws9 "9:IX"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -176,11 +176,28 @@ bindsym $mod+r mode "resize"
 
 # i3status-rust bar
 bar {
-	font pango:DejaVu Sans Mono, FontAwesome 17
+	i3bar_command i3bar --transparency
+	font pango:DejaVu Sans Mono, FontAwesome 12
 	position bottom
-	height 40
+	height 36
 	#mode hide
 	status_command /usr/bin/i3status-rs $HOME/.config/i3/config.toml
+	workspace_buttons yes
+	#separator_symbol ":|:"
+	strip_workspace_numbers yes
+	strip_workspace_name no
+
+	colors {
+        background  #212121
+        statusline  #dddddd
+        separator   #666666
+        # class             border  backgr. text
+        focused_workspace   #2b83a6 #2b83a6 #ffffff
+        active_workspace    #212121 #212121 #ffffff
+        inactive_workspace  #212121 #212121 #86888c
+        urgent_workspace    #d64e4e #d64e4e #ffffff
+        binding_mode        #229c56 #229c56 #ffffff
+    }
 }
 
 bindsym $mod+Shift+b bar mode toggle
@@ -194,8 +211,8 @@ for_window [class="mpv"] floating enable
 for_window [class="Seafile Client"] floating enable
 
 # border
-hide_edge_borders smart
-default_border pixel 3
+#hide_edge_borders smart
+default_border pixel 1
 
 # scratchpad
 bindsym	$mod+Shift+minus	move scratchpad

@@ -15,6 +15,7 @@ call plug#begin(stdpath('data') . '/plugged')
 	" Plug 'iamcco/markdown-preview.vim'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 	Plug 'tpope/vim-commentary'
+	Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 source $HOME/.config/nvim/modules/fzf.vim
@@ -25,4 +26,4 @@ source $HOME/.config/nvim/modules/numberlines.vim
 source $HOME/.config/nvim/modules/rnvimr.vim
 source $HOME/.config/nvim/modules/vim-commentary.vim
 source $HOME/.config/nvim/modules/markdown-preview.vim
-
+source $HOME/.config/nvim/modules/coc.vim

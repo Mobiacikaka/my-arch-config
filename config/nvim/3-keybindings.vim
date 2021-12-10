@@ -1,5 +1,5 @@
 " I hate Esc too
-inoremap JK <Esc>
+inoremap JJ <Esc>
 
 " better window navigation
 tnoremap <A-h> <C-\><C-N><C-w>h
@@ -39,7 +39,7 @@ vnoremap > >v
 nnoremap <space>t :tabnew<CR>:terminal<CR>
 " terminal exit
 tnoremap <Esc> <C-\><C-n>
-tnoremap JK <C-\><C-n>
+tnoremap KK <C-\><C-n>
 
 " terminal next/prev command
 tnoremap <C-j> <Down>

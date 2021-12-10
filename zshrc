@@ -108,6 +108,10 @@ alias uu=udiskie-umount
 alias grep=rg
 alias find=fd
 alias cat=lolcat
+alias bc='bc -l'
+alias v=nvim
 
 export ALL_PROXY=http://127.0.0.1:7890
 #export m_computer=$(cat $HOME/ip.txt)
+
+bindkey -v

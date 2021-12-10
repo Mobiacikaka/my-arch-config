@@ -8,5 +8,4 @@ set smartindent
 set cursorline
 set clipboard=unnamedplus
 set nowrap
-set foldmethod=syntax
-
+" set foldmethod=syntax
