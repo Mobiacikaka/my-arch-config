@@ -1,5 +1,18 @@
-theme = "slick"
-icons = "awesome"
+theme = "gruvbox-light"
+icons = "awesome5"
+
+# [[block]]
+# block = "focused_window"
+# max_width = 30
+# show_marks = "visible"
+# [block.theme_overrides]
+# idle_bg = "#003400"
+# idle_fg = "#efef00"
+
+[[block]]
+block = "time"
+interval = 5
+format = "%a %m/%d %R"
 
 [[block]]
 block = "net"
@@ -7,7 +20,7 @@ device = "enp0s31f6"
 hide_inactive = true
 hide_missing = true
 interval = 5
-format = "{ip} {speed_up} {speed_down}"
+format = "{ip}"# {speed_up} {speed_down}"
 
 [[block]]
 block = "net"
@@ -15,7 +28,7 @@ device = "wlan0"
 hide_inactive = true
 hide_missing = true
 interval = 5
-format = "{ssid} {ip} {speed_up} {speed_down}"
+format = "{ssid}"
 
 [[block]]
 block = "disk_space"
@@ -31,7 +44,8 @@ format = "{icon} {available}/{total}"
 [[block]]
 block = "memory"
 display_type = "memory"
-format_mem = "{mem_used_percents}"
+# format_mem = "{mem_used_percents}"
+format_mem = "{mem_used} /{mem_total}"
 format_swap = "{swap_used_percents}"
 
 [[block]]
@@ -49,11 +63,6 @@ device = "intel_backlight"
 
 [[block]]
 block = "sound"
-
-[[block]]
-block = "time"
-interval = 5
-format = "%a %d/%m %R"
 
 #[[block]]
 #block = "xrandr"
