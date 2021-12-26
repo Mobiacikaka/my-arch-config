@@ -2,10 +2,10 @@ let g:startify_session_dir = '~/.config/nvim/session'
 
 let g:startify_lists = [
           \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
-          \ { 'type': 'sessions',  'header': ['   Sessions']       },
-          \ { 'type': 'dir',       'header': ['   Current Directory '. getcwd()] },
           \ { 'type': 'files',     'header': ['   Files']            },
+          \ { 'type': 'sessions',  'header': ['   Sessions']       },
           \ ]
+		  " \ { 'type': 'dir',       'header': ['   Current Directory '. getcwd()] },
 
 let g:startify_bookmarks = [
 			\ { 'c': '~/.config/i3/config' },
@@ -36,3 +36,6 @@ endfunction
 let g:startify_transformations = [
   \ ['.*', function('s:truncate_filename')],
   \ ]
+
+ let g:startify_custom_header =
+       \ startify#pad(split(system('toilet -f banner3-D VIM2021'), "\n"))

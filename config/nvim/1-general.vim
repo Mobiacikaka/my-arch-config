@@ -8,4 +8,9 @@ set smartindent
 set cursorline
 set clipboard=unnamedplus
 set nowrap
-" set foldmethod=syntax
+
+" set fold configuration
+set foldmethod=syntax
+set foldlevel=3
+" set foldlevelstart=99
+set wrap

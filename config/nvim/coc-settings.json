@@ -1,7 +1,9 @@
 {
 	"explorer.width": 30,
-	"explorer.icon.enableNerdfont": true,
+	// "explorer.icon.enableNerdfont": true,
+	// "explorer.icon.source": "vim-devicons",
 	"explorer.previewAction.onHover": false,
+
 	"explorer.keyMappings.global": {
 		"<cr>": ["expandable?", "expand", "open"],
 		"v": "open:vsplit"
@@ -25,10 +27,10 @@
 			"filetypes": ["go"]
 		},
 
-		"digestif": {
-			"command": "digestif",
-			"filetypes": ["tex", "plaintex", "context"]
-		},
+		// "digestif": {
+		// 	"command": "digestif",
+		// 	"filetypes": ["tex", "plaintex", "context"]
+		// },
 
 		"cmake": {
 			"command": "cmake-language-server",

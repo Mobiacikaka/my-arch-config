@@ -14,6 +14,11 @@ nnoremap <A-h> <C-w>h
 nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
+" better window movement
+nnoremap <A-S-h> <C-w>H
+nnoremap <A-S-j> <C-w>J
+nnoremap <A-S-k> <C-w>K
+nnoremap <A-S-l> <C-w>L
 
 " tab in normal mode will move to next tab
 nnoremap <TAB> gt
@@ -35,12 +40,26 @@ nnoremap <C-Q> :wq!<CR>
 vnoremap < <v
 vnoremap > >v
 
-" open terminal move quickly
-nnoremap <space>t :tabnew<CR>:terminal<CR>
+" Open split more faster
+nnoremap <silent> <space>tn :tabnew<CR>
+nnoremap <silent> <space>vn :vnew<CR>
+nnoremap <silent> <space>sn :new<CR>
+nnoremap <silent> <space>te :Texplore<CR>
+nnoremap <silent> <space>ve :Vexplore<CR>
+nnoremap <silent> <space>se :Sexplore<CR>
+
+" Open terminal
+nnoremap <silent> <space>tt :tabnew<CR>:terminal<CR>
+nnoremap <silent> <space>vt :vnew<CR>:terminal<CR>
+nnoremap <silent> <space>st :new<CR>:terminal<CR>
+
 " terminal exit
 tnoremap <Esc> <C-\><C-n>
 tnoremap KK <C-\><C-n>
 
-" terminal next/prev command
-tnoremap <C-j> <Down>
-tnoremap <C-k> <Up>
+autocmd BufRead * autocmd FileType <buffer> ++once
+  \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif
+
+" fold keybinding
+nnoremap <C-j> zC
+nnoremap <C-k> zO
