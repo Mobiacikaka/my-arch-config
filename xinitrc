@@ -76,5 +76,5 @@ export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 
 # keyboard repeat rate
-xset r rate 200 25
+# xset r rate 200 25
 
