@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/justin/.oh-my-zsh"
@@ -8,8 +8,8 @@ export ZSH="/home/justin/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="agnoster"
-ZSH_THEME="kiwi"
+ZSH_THEME="simple"
+# ZSH_THEME="kiwi"
 #ZSH_THEME=random
 
 # Set list of themes to pick from when loading at random
@@ -19,14 +19,14 @@ ZSH_THEME="kiwi"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment one of the following lines to change the auto-update behavior
-# zstyle ':omz:update' mode disabled  # disable automatic updates
+zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
@@ -105,13 +105,27 @@ source $ZSH/oh-my-zsh.sh
 alias vim=nvim
 alias vi=nvim
 alias uu=udiskie-umount
-alias grep=rg
-alias find=fd
+# alias grep=rg
+# alias find=fd
 alias cat=lolcat
 alias bc='bc -l'
 alias v=nvim
+alias c='clear'
+# alias top=htop
+alias xopen=xdg-open
+# alias fd='fd -H'
+# alias null='/dev/null'
+alias uu=udiskie-umount
+alias um=udiskie-mount
+alias oneko='oneko -rv -sakura -speed 32'
 
 export ALL_PROXY=http://127.0.0.1:7890
-#export m_computer=$(cat $HOME/ip.txt)
+export GOPATH=/home/justin/App/go
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 
-bindkey -v
+# bindkey -v
+bindkey '^j' history-beginning-search-forward
+bindkey '^k' history-beginning-search-backward
+
+# neofetch | lolcat
+
