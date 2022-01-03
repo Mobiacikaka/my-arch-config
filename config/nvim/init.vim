@@ -1,4 +1,6 @@
 " Created by Palladiawa Mobiacikaka
+let mapleader = " "
+
 source $HOME/.config/nvim/0-pluggins.vim
 source $HOME/.config/nvim/1-general.vim
 source $HOME/.config/nvim/2-appearance.vim

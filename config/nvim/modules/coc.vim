@@ -37,6 +37,11 @@ let g:coc_explorer_global_presets = {
 " nmap <space>f :CocCommand explorer --preset floating<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 
+nmap <silent> gd :call CocAction('jumpDefinition')<CR>
 nmap <silent> gs :call CocAction('jumpDefinition', 'split')<CR>
-nmap <silent> gd :call CocAction('jumpDefinition', 'vsplit')<CR>
+nmap <silent> gv :call CocAction('jumpDefinition', 'vsplit')<CR>
 nmap <silent> gt :call CocAction('jumpDefinition', 'tabe')<CR>
+
+" coc autocomplete selection
+" inoremap <expr><Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+" inoremap <expr><S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"

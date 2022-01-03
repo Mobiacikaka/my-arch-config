@@ -3,7 +3,7 @@ let g:fzf_map_keys=0
 " This is the default extra key bindings
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
-  \ 'ctrl-x': 'split',
+  \ 'ctrl-s': 'split',
   \ 'ctrl-v': 'vsplit' }
 
 " Enable per-command history.
@@ -12,11 +12,12 @@ let g:fzf_action = {
 " explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
-map <C-p> :GFiles<CR>
-map <Space>b :Buffers<CR>
-nnoremap <Space>g :Rg<CR>
-" nnoremap <Space>t :Tags<CR>
-" nnoremap <Space>m :Marks<CR>
+map <C-p> :Files<CR>
+map <Leader>f :GFiles<CR>
+map <Leader>b :Buffers<CR>
+nnoremap <Leader>g :Rg<CR>
+nnoremap <Leader>t :Tags<CR>
+nnoremap <Leader>m :Marks<CR>
 
 
 let g:fzf_tags_command = 'ctags -R'
@@ -25,7 +26,8 @@ let g:fzf_tags_command = 'ctags -R'
 let g:fzf_layout = { 'down': '~40%' }
 
 let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
-let $FZF_DEFAULT_COMMAND="rg --files --hidden"
+" let $FZF_DEFAULT_COMMAND="rg --files --hidden"
+let $FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 
 
 " Customize fzf colors to match your color scheme

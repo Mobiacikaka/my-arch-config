@@ -11,6 +11,6 @@ set nowrap
 
 " set fold configuration
 set foldmethod=syntax
-set foldlevel=3
-" set foldlevelstart=99
-set wrap
+set foldlevel=1
+set foldlevelstart=99
+set nowrap

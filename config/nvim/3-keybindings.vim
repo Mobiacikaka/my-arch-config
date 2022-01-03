@@ -1,5 +1,7 @@
 " I hate Esc too
 inoremap JJ <Esc>
+nnoremap j gj
+nnoremap k gk
 
 " better window navigation
 tnoremap <A-h> <C-\><C-N><C-w>h
@@ -23,12 +25,21 @@ nnoremap <A-S-l> <C-w>L
 " tab in normal mode will move to next tab
 nnoremap <TAB> gt
 nnoremap <S-TAB> gT
+nnoremap <A-1> 1gt
+nnoremap <A-2> 2gt
+nnoremap <A-3> 3gt
+nnoremap <A-4> 4gt
+nnoremap <A-5> 5gt
+nnoremap <A-6> 6gt
+nnoremap <A-7> 7gt
+nnoremap <A-8> 8gt
+nnoremap <A-9> 9gt
 
 " Use alt + hjkl to resize windows
-" nnoremap <M-j>    :resize -2<CR>
-" nnoremap <M-k>    :resize +2<CR>
-" nnoremap <M-h>    :vertical resize -2<CR>
-" nnoremap <M-l>    :vertical resize +2<CR>
+nnoremap <A-S-Up>		:resize -2<CR>
+nnoremap <A-S-Down>		:resize +2<CR>
+nnoremap <A-S-Left>		:vertical resize -2<CR>
+nnoremap <A-S-Right>	:vertical resize +2<CR>
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>
@@ -57,8 +68,9 @@ nnoremap <silent> <space>st :new<CR>:terminal<CR>
 tnoremap <Esc> <C-\><C-n>
 tnoremap KK <C-\><C-n>
 
-autocmd BufRead * autocmd FileType <buffer> ++once
-  \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif
+" remember the last position
+" autocmd BufRead * autocmd FileType <buffer> ++once
+"   \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif
 
 " fold keybinding
 nnoremap <C-j> zC

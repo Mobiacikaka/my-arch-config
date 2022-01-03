@@ -101,10 +101,10 @@ let s:nvim = has('nvim-0.2') || (has('nvim') && exists('*jobwait') && !s:is_win)
 let s:vim8 = has('patch-8.0.0039') && exists('*job_start')
 if s:is_win && &shellslash
   set noshellslash
-  let s:me = resolve(expand('<sfile>:p'))
+  " let s:me = resolve(expand('<sfile>:p'))
   set shellslash
 else
-  let s:me = resolve(expand('<sfile>:p'))
+  " let s:me = resolve(expand('<sfile>:p'))
 endif
 let s:base_spec = { 'branch': '', 'frozen': 0 }
 let s:TYPE = {
