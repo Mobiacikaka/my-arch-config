@@ -20,3 +20,4 @@ sync .config yt-dlp
 sync .config zathura
 sync .config neofetch
 sync .config picom.conf
+sync ".local/bin" translate 
