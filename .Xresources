@@ -1,0 +1,106 @@
+!!source ~/.cache/wal/colors.sh 
+Xcursor.size : 32
+Xcursor.theme: Oreo Spark Violet Cursors
+Xft.dpi: 96
+
+! Dracula Xresources palette
+!*.foreground: #F8F8F2
+!*.background: #282A36
+!*.color0:     #000000
+!*.color8:     #AAFF7F
+!*.color1:     #FF5555
+!*.color9:     #FF6E67
+!*.color2:     #50FA7B
+!*.color10:    #5AF78E
+!*.color3:     #F1FA8C
+!*.color11:    #F4F99D
+!*.color4:     #BD93F9
+!*.color12:    #CAA9FA
+!*.color5:     #FF79C6
+!*.color13:    #FF92D0
+!*.color6:     #8BE9FD
+!*.color14:    #9AEDFE
+!*.color7:     #BFBFBF
+!*.color15:    #E6E6E6
+!*foreground = ${xrdb:color7}
+!*background = ${xrdb:color2}
+
+
+!! One Dark theme
+! special
+*.foreground:   #ABB2BF
+*.background:   #282C34
+!*.cursorColor:  #ABB2BF
+*.cursorColor:  cyan
+! black
+*.color0:       #2C323C
+*.color8:       #3E4452
+! red
+*.color1:       #E06C75
+*.color9:       #E06C75
+! green
+*.color2:       #98C379
+*.color10:      #98C379
+! yellow
+*.color3:       #E5C07B
+*.color11:      #E5C07B
+! blue
+*.color4:       #61AFEF
+*.color12:      #61AFEF
+! magenta
+*.color5:       #C678DD
+*.color13:      #C678DD
+! cyan
+*.color6:       #56B6C2
+*.color14:      #56B6C2
+! white
+*.color7:       #5C6370
+*.color15:      #ABB2BF
+
+xterm.font: xft:Fira Code:pixelsize=22
+
+rofi.color-enabled: true
+rofi.color-window: #1c1c22, #3e646f, #3e646f
+rofi.color-normal: #1c1c22, #d9d6ca, #85aab6, #d9d6ca, #78824B
+rofi.color-active: #1c1c22, #d9d6ca, #85aab6, #d9d6ca, #78824B
+rofi.color-urgent: #1c1c22, #d9d6ca, #85aab6, #d9d6ca, #78824B
+
+rofi.separator-style: solid
+rofi.sidebar-mode: false
+rofi.lines: 5
+rofi.font: Source Code Pro Semibold 22
+rofi.bw: 1
+rofi.columns: 2
+rofi.padding: 5
+rofi.fixed-num-lines: true
+rofi.hide-scrollbar: true
+
+!! URxvt Appearance
+URxvt.font: xft:Fira Code:pixelsize=18,xft:WenQuanYi Zen Hei Mono:pixelsize=18
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.geometry: 92x24
+!URxvt.internalBorder: 24
+URxvt.cursorBlink: true
+URxvt.cursorColor: cyan
+URxvt.cursorUnderline: false
+URxvt.saveline: 20480
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false
+! URxvt.transparent: true
+! URxvt.shading: 20
+
+!! URxvt Shortcuts
+! URxvt.perl-ext-common: ...,keyboard-select
+! URxvt.keysym.Escape:   perl:keyboard-select:activate
+
+URxvt.perl-ext-common: default,resize-font,clipboard,tabbedex
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+!URxvt.keysym.Control-Shift-t: perl:tabbedex:new_tab
+!URxvt.keysym.Shift-Right: perl:tabbedex:next_tab
+!URxvt.keysym.Shift-Left: perl:tabbedex:prev_tab
+URxvt.inputMethod: fcitx

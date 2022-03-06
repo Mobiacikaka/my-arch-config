@@ -21,3 +21,5 @@ sync .config zathura
 sync .config neofetch
 sync .config picom.conf
 sync ".local/bin" translate 
+sync "./" ".zshrc"
+sync "./" ".Xresources"
