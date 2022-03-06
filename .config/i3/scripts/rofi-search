@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+# xdg-open "$(rg --no-messages --files $HOME/.config $HOME/Download $HOME/Documents $HOME/Desktop $HOME/Pictures \
+    # -g "!{*.srt,*.rar,*.txt,*.zip,*.nfo}" | rofi -threads 0 \
+    # -theme onedark -font "Monospace 22" \
+    # -dmenu -sort -sorting-method fzf -i -p "find")"
+
+file="$(rg --no-messages --files ~/Desktop ~/Documents ~/Pictures ~/Downloads ~/Study\ Resources \
+	| rofi -threads 0 -theme onedark -font "Monospace 14" -dmenu -sort -sorting-method fzf -i -p "xdg-open")"
+
+if test -f "$file"; then
+	echo $file
+	xdg-open "$file"
+fi

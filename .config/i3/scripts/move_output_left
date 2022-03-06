@@ -1,0 +1,3 @@
+#!/bin/sh
+i3-msg move container to output left
+i3-msg focus output left

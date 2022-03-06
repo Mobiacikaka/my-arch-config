@@ -1,0 +1,17 @@
+set $mod Mod4
+set $alt Mod1
+
+font pango:Fira Code 13
+
+include $HOME/.config/i3/config.d/general.conf
+include $HOME/.config/i3/config.d/colorscheme.conf
+include $HOME/.config/i3/config.d/keybinding.conf
+include $HOME/.config/i3/config.d/workspace.conf
+include $HOME/.config/i3/config.d/mode_system.conf
+include $HOME/.config/i3/config.d/mode_resize.conf
+include $HOME/.config/i3/config.d/bar.conf
+include $HOME/.config/i3/config.d/for_window.conf
+# include $HOME/.config/i3/config.d/mouse_sim.conf
+
+#exec --no-startup-id $HOME/.config/i3/launch_polybar.sh
+exec_always --no-startup-id $HOME/.config/i3/scripts/autostart

@@ -1,0 +1,13 @@
+#!/bin/sh
+
+$HOME/.config/X11/i3-monitor
+$HOME/.config/i3/scripts/feh-background
+
+rprocesses=$(ps -aux)
+
+[ -z "$(echo $rprocesses | grep fcitx)" ] && fcitx5 &
+[ -z "$(echo $rprocesses | grep dunst)" ] && dunst &
+# [ -z "$(echo $rprocesses | grep picom)" ] && picom &
+[ -z "$(echo $rprocesses | grep nm-applet)" ] && nm-applet &
+[ -z "$(echo $rprocesses | grep clashr)" ] && $HOME/App/clashr/clashr -d $HOME/App/clashr &
+[ -z "$(echo $rprocesses | grep unclutter)" ] && unclutter &

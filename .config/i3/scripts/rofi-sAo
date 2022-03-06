@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+
+file="$(rg --no-messages --files $HOME/* | rofi -threads 0 -theme onedark -font "Monospace 14" -dmenu -sort -sorting-method fzf -i -p "file")"
+engine="$(ls /usr/bin | rofi -threads 0 -font "Monospace 16" -dmenu -sort -sorting-method fzf -i -p "open-with")"
+
+if test -f "$file"; then
+	echo $file
+	if [ "$engine" = nvim ] ; then
+		st -e "$engine" "$file"
+	fi
+	"$engine" "$file"
+fi
