@@ -1,0 +1,24 @@
+#!/bin/sh
+
+set -e
+
+xrandr_output=$(xrandr --current)
+eDP=$(echo "$xrandr_output" | grep eDP | cut -d " " -f 1)
+HDMI=$(echo "$xrandr_output" | grep HDMI| cut -d " " -f 1)
+
+if [ -z "$HDMI" ]
+then
+	xrandr --output "$eDP" --auto --primary
+	echo only eDP
+else
+	xrandr	--output "$HDMI" --mode 3840x2160 --scale 0.7 --primary --pos 0x0 \
+			--output "$eDP" --auto --left-of "$HDMI"
+	echo eDP with HDMI
+
+	i3-msg focus output left
+	i3-msg workspace "0:Zero"
+	i3-msg focus output right
+fi
+
+$HOME/.config/X11/noblank
+$HOME/.config/X11/repeat-rate
