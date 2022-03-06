@@ -1,0 +1,12 @@
+../
+nvim/
+| autoload/
+| colors/
+| modules/
+| session/
+| 0-pluggins.vim
+| 1-general.vim
+| 2-appearance.vim
+| 3-keybindings.vim
+| coc-settings.json
+| init.vim
