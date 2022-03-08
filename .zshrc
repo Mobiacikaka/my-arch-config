@@ -61,7 +61,6 @@ fi
 alias vim=nvim
 alias vi=nvim
 alias v=nvim
-alias cat=lolcat
 alias bc='bc -l'
 alias c='clear'
 alias uu=udiskie-umount

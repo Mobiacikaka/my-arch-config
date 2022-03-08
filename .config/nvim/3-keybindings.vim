@@ -38,6 +38,7 @@ nnoremap <A-S-h> <C-w>H
 nnoremap <A-S-j> <C-w>J
 nnoremap <A-S-k> <C-w>K
 nnoremap <A-S-l> <C-w>L
+nnoremap TT <C-w>T
 
 " tab in normal mode will move to next tab
 nnoremap <TAB> gt
@@ -52,7 +53,7 @@ nnoremap <A-7> 7gt
 nnoremap <A-8> 8gt
 nnoremap <A-9> 9gt
 
-" Use alt + hjkl to resize windows
+" Use alt + shift + arrows to resize windows
 nnoremap <A-S-Up>		:resize -2<CR>
 nnoremap <A-S-Down>		:resize +2<CR>
 nnoremap <A-S-Left>		:vertical resize -2<CR>

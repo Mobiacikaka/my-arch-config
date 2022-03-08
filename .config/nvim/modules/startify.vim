@@ -39,4 +39,5 @@ let g:startify_transformations = [
   \ ]
 
  let g:startify_custom_header =
-       \ startify#pad(split(system('toilet -f banner3-D VIM2022'), "\n"))
+       \ startify#pad(split(system('figlet -f 3D-ASCII -w 200 "VIM2022"'), "\n"))
+       " \ startify#pad(split(system('toilet -f larry3d VIM2022'), "\n"))
