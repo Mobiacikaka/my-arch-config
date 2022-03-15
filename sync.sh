@@ -6,8 +6,9 @@ backup_path=$(pwd)
 
 sync()
 {
-	echo rsync -a "$HOME/$1/$2" "$backup_path/$1"
-	rsync -a "$HOME/$1/$2" "$backup_path/$1"
+	cmd="rsync -avh --delete "$HOME/$1/$2" "$backup_path/$1""
+	echo $cmd
+	eval $cmd
 }
 
 sync .config i3

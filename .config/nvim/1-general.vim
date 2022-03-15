@@ -18,3 +18,5 @@ set smartindent
 set noexpandtab
 set tabstop=4
 set shiftwidth=4
+
+autocmd Filetype python setlocal foldmethod=indent

@@ -3,8 +3,10 @@ icons = "awesome"
 [theme]
 name = "solarized-dark"
 [theme.overrides]
-# separator = "|"
+separator = " "
 # separator_fg = "#654321"
+idle_bg = "#2C323C"
+idle_fg = "#56B6C2"
 
 # [[block]]
 # block = "focused_window"

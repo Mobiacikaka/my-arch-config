@@ -4,7 +4,9 @@ call plug#begin(stdpath('data') . '/plugged')
 	" Plug 'lambdalisue/nerdfont.vim'
 	Plug 'joshdick/onedark.vim'
 	Plug 'rakr/vim-one'
-	Plug 'itchyny/lightline.vim'
+	" Plug 'itchyny/lightline.vim'
+	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
 
 	" Plug 'preservim/nerdtree'
 	Plug 'neovim/nvim-lspconfig'
@@ -48,3 +50,5 @@ source $HOME/.config/nvim/modules/vim-which-key.vim
 source $HOME/.config/nvim/modules/VapoursynthPreview.vim
 " source $HOME/.config/nvim/modules/expandmacro.vim
 source $HOME/.config/nvim/modules/vim-indent-guides.vim
+" source $HOME/.config/nvim/modules/lightline.vim
+source $HOME/.config/nvim/modules/airline.vim

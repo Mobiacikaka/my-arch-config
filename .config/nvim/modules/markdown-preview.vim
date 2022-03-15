@@ -89,4 +89,5 @@ let g:mkdp_page_title = '「${name}」'
 " these filetypes will have MarkdownPreview... commands
 let g:mkdp_filetypes = ['markdown']
 
-nmap <M-p> <Plug>MarkdownPreview
+nmap <A-p> <Plug>MarkdownPreview
+nmap <A-S-p> :CocCommand markmap.watch<CR>

@@ -24,4 +24,4 @@ let g:vimtex_indent_enabled = 0
 autocmd Filetype tex	nnoremap <buffer> <LocalLeader>p :VimtexView<CR>
 autocmd Filetype tex	nnoremap <buffer> <LocalLeader>c :VimtexCompile<CR>
 autocmd Filetype tex	setlocal inde=
-autocmd Filetype tex	set wrap
+autocmd Filetype tex	setlocal wrap

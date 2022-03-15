@@ -2,6 +2,7 @@
 
 $HOME/.config/X11/i3-monitor
 $HOME/.config/i3/scripts/feh-background
+setxkbmap -option caps:escape
 
 rprocesses=$(ps -aux)
 

@@ -23,9 +23,3 @@ syntax on
 " colorscheme onedark
 colorscheme one
 set background=dark
-
-" statusline
-let g:lightline = {
-      \ 'colorscheme': 'nord',
-      \ }
-
