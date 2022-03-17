@@ -1,0 +1,36 @@
+# sxivmanga () {
+# 	dir=$(mktemp -p /tmp -d sxiv-XXX) 
+# 	7z x "${@: -1}" -o$dir > /dev/null
+# 	sxiv "${@:1:-1}" -r $dir
+# }
+
+sxcv () {
+	dir=$(mktemp -p /tmp -d sxiv-XXX) 
+	files=($(7z l -ba -slt "${@: -1}" | grep Path | cut -d" " -f3))
+	dirmark=($(7z l -ba -slt "${@: -1}" | grep Folder | cut -d" " -f3))
+
+	length=${#files[@]}
+	echo $length
+	for i in $(seq 1 $length)
+	do
+		if [ ${dirmark[i]} = "+" ]
+		then
+			folder=${files[i]}
+			mkdir -p "$dir/$folder"
+		fi
+	done
+
+	for i in $(seq 1 $length)
+	do
+		if [ ${dirmark[i]} = "-" ]
+		then
+			pic=${files[i]}
+			touch "$dir/$pic"
+		fi
+	done
+
+	7z x "${@: -1}" -o$dir -y &
+	sleep 1
+	sxiv "${@:1:-1}" -r $dir
+	\rm -r $dir
+}

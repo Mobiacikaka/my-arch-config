@@ -12,3 +12,4 @@ rprocesses=$(ps -aux)
 [ -z "$(echo $rprocesses | grep nm-applet)" ] && nm-applet &
 [ -z "$(echo $rprocesses | grep clashr)" ] && $HOME/App/clashr/clashr -d $HOME/App/clashr &
 [ -z "$(echo $rprocesses | grep unclutter)" ] && unclutter &
+[ -z "$(echo $rprocesses | grep tzclock)" ] && tzclock &
