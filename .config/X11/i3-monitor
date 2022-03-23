@@ -3,8 +3,8 @@
 set -e
 
 xrandr_output=$(xrandr --current)
-eDP=$(echo "$xrandr_output" | grep eDP | cut -d " " -f 1)
-HDMI=$(echo "$xrandr_output" | grep HDMI| cut -d " " -f 1)
+eDP=$(echo "$xrandr_output" | grep " connected " | grep eDP | cut -d " " -f 1)
+HDMI=$(echo "$xrandr_output"  | grep " connected " | grep HDMI | cut -d " " -f 1)
 
 if [ -z "$HDMI" ]
 then
