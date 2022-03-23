@@ -43,19 +43,15 @@ nnoremap TT <C-w>T
 " tab in normal mode will move to next tab
 nnoremap <TAB> gt
 nnoremap <S-TAB> gT
-nnoremap <A-1> 1gt
-nnoremap <A-2> 2gt
-nnoremap <A-3> 3gt
-nnoremap <A-4> 4gt
-nnoremap <A-5> 5gt
-nnoremap <A-6> 6gt
-nnoremap <A-7> 7gt
-nnoremap <A-8> 8gt
-nnoremap <A-9> 9gt
+let i = 1
+while i <= 9
+	execute 'nnoremap <A-' . i . '> ' . i . 'gt'
+	let i = i + 1
+endwhile
 
 " Use alt + shift + arrows to resize windows
-nnoremap <A-S-Up>		:resize -2<CR>
-nnoremap <A-S-Down>		:resize +2<CR>
+nnoremap <A-S-Up>		:resize +2<CR>
+nnoremap <A-S-Down>		:resize -2<CR>
 nnoremap <A-S-Left>		:vertical resize -2<CR>
 nnoremap <A-S-Right>	:vertical resize +2<CR>
 
@@ -81,3 +77,10 @@ nnoremap <silent> <leader>se :Sexplore<CR>
 nnoremap <silent> <leader>tt :tabnew<CR>:terminal<CR>
 nnoremap <silent> <leader>vt :vnew<CR>:terminal<CR>
 nnoremap <silent> <leader>st :new<CR>:terminal<CR>
+
+
+""""""""""""""""""""
+"		Nop		   "
+""""""""""""""""""""
+nnoremap <C-i> <Nop>
+nnoremap <C-[> <Nop>

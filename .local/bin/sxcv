@@ -1,8 +1,4 @@
-# sxivmanga () {
-# 	dir=$(mktemp -p /tmp -d sxiv-XXX) 
-# 	7z x "${@: -1}" -o$dir > /dev/null
-# 	sxiv "${@:1:-1}" -r $dir
-# }
+#!/bin/sh
 
 sxcv () {
 	dir=$(mktemp -p /tmp -d sxiv-XXX) 
@@ -10,7 +6,6 @@ sxcv () {
 	dirmark=($(7z l -ba -slt "${@: -1}" | grep Folder | cut -d" " -f3))
 
 	length=${#files[@]}
-	echo $length
 	for i in $(seq 1 $length)
 	do
 		if [ ${dirmark[i]} = "+" ]
@@ -29,8 +24,8 @@ sxcv () {
 		fi
 	done
 
-	7z x "${@: -1}" -o$dir -y &
-	sleep 1
-	sxiv "${@:1:-1}" -r $dir
+	7z x "${@: -1}" -o$dir -y > /dev/null &
+	sleep 0.5
+	sxiv "${@:1:-1}" -fs w -r $dir
 	\rm -r $dir
 }
