@@ -5,7 +5,7 @@ set -e
     # -theme onedark -font "Monospace 22" \
     # -dmenu -sort -sorting-method fzf -i -p "find")"
 
-file="$(rg --no-messages --files ~/Desktop ~/Documents ~/Pictures ~/Downloads ~/Study\ Resources \
+file="$(rg --no-messages --files ~/Desktop ~/Documents ~/Pictures ~/Downloads ~/Study\ Resources ~/App/Zotero \
 	| rofi -threads 0 -theme onedark -font "Monospace 14" -dmenu -sort -sorting-method fzf -i -p "xdg-open")"
 
 if test -f "$file"; then
