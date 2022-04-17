@@ -82,5 +82,5 @@ nnoremap <silent> <leader>st :new<CR>:terminal<CR>
 """"""""""""""""""""
 "		Nop		   "
 """"""""""""""""""""
-nnoremap <C-i> <Nop>
+" nnoremap <C-i> <Nop>
 nnoremap <C-[> <Nop>

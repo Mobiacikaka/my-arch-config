@@ -40,7 +40,6 @@ autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | end
 nmap <silent> gd :call CocAction('jumpDefinition')<CR>
 nmap <silent> gs :call CocAction('jumpDefinition', 'split')<CR>
 nmap <silent> gv :call CocAction('jumpDefinition', 'vsplit')<CR>
-nmap <silent> gt :call CocAction('jumpDefinition', 'tabe')<CR>
 
 " coc autocomplete selection
 " inoremap <expr><Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
