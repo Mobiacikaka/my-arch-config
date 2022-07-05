@@ -1,3 +1,3 @@
 #!/usr/bin/sh
 
-notify-send -u low "$(xsel -o)" "$(xsel -o | trans -show-languages n -show-translation-phonetics n -indent 1 -t zh -no-ansi -show-prompt-message n -no-theme -e google)"
+notify-send -u low "translation" "$(xsel -o | trans -show-languages n -show-translation-phonetics n -indent 1 -t zh -no-ansi -show-prompt-message n -no-theme -e google)"

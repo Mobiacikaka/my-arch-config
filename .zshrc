@@ -8,6 +8,7 @@ ZSH_THEME="simple"
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="false"
+zmodload zsh/complist
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -69,7 +70,7 @@ alias um=udiskie-mount
 alias less='less -r'
 alias ls='ls --color=tty -l'
 
-export ALL_PROXY=http://127.0.0.1:7890
+# export ALL_PROXY=http://127.0.0.1:7890
 export GOPATH=/home/justin/App/go
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git -I'
 

@@ -21,6 +21,7 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'lilydjwg/fcitx.vim'
 	" Plug 'nathanaelkane/vim-indent-guides'
 	Plug 'thaerkh/vim-indentguides'
+	Plug 'chaimleib/vim-renpy'
 
 	" latex
 	Plug 'lervag/vimtex'
