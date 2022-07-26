@@ -61,14 +61,13 @@ fi
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs.
 alias vim=nvim
-alias vi=nvim
 alias v=nvim
 alias bc='bc -l'
 alias c='clear'
 alias uu=udiskie-umount
 alias um=udiskie-mount
 alias less='less -r'
-alias ls='ls --color=tty -l'
+alias ls='ls --color=tty -l --time-style=long-iso -h'
 
 # export ALL_PROXY=http://127.0.0.1:7890
 export GOPATH=/home/justin/App/go

@@ -10,6 +10,7 @@ let g:startify_lists = [
 let g:startify_bookmarks = [
 			\ { 'c': '~/.config/i3/config' },
 			\ { 'i': '~/.config/nvim/init.vim' },
+			\ { 'm': '~/.config/mpv/mpv.conf' },
 			\ { 't': '~/Desktop/TODO.md' },
 			\ { 'z': '~/.zshrc' },
             \ ]
@@ -39,5 +40,6 @@ let g:startify_transformations = [
   \ ]
 
  let g:startify_custom_header =
-       \ startify#pad(split(system('figlet -f 3D-ASCII -w 200 "VIM2022"'), "\n"))
+		 \ startify#pad(split(system('cat $HOME/Desktop/banner'), "\n"))
+       " \ startify#pad(split(system('figlet -f 3D-ASCII -w 200 "VIM2022"'), "\n"))
        " \ startify#pad(split(system('toilet -f larry3d VIM2022'), "\n"))

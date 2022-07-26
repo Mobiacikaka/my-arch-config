@@ -1,0 +1,13 @@
+[general]
+framerate = 120
+
+[color]
+gradient = 1
+gradient_color_1 = '#ff5072'
+gradient_color_2 = '#ff607d'
+gradient_color_3 = '#ff6f89'
+gradient_color_4 = '#ff7c94'
+gradient_color_5 = '#ff899e'
+gradient_color_6 = '#ff96a9'
+gradient_color_7 = '#ffa2b3'
+gradient_color_8 = '#ffaebd'

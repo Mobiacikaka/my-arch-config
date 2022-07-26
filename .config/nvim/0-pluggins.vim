@@ -14,7 +14,7 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'mhinz/vim-startify'
 	Plug 'myusuf3/numbers.vim'
 	Plug 'iamcco/mathjax-support-for-mkdp'
-	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 	Plug 'tpope/vim-commentary'
 	Plug 'airblade/vim-gitgutter'
 	Plug 'folke/which-key.nvim'

@@ -6,7 +6,7 @@ name = "solarized-dark"
 separator = " "
 # separator_fg = "#654321"
 idle_bg = "#2C323C"
-idle_fg = "#56B6C2"
+idle_fg = "#FF5072"
 
 # [[block]]
 # block = "focused_window"

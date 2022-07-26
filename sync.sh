@@ -12,6 +12,8 @@ sync()
 }
 
 sync .config i3
+sync .config mpv
+sync .config cava
 sync .config nvim
 sync .config gotop
 sync .config htop

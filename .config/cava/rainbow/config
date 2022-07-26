@@ -1,0 +1,35 @@
+[general]
+framerate = 120
+
+[color]
+gradient = 1
+
+# rainbow 1
+# gradient_color_1 = '#c727b8'
+# gradient_color_2 = '#f8008e'
+# gradient_color_3 = '#ff0c5d'
+# gradient_color_4 = '#ff5326'
+# gradient_color_5 = '#fb8400'
+# gradient_color_6 = '#d5ac00'
+# gradient_color_7 = '#9bce00'
+# gradient_color_8 = '#23e92a'
+
+# rainbow 2
+gradient_color_1 = '#ff0000'
+gradient_color_2 = '#e96600'
+gradient_color_3 = '#cc9100'
+gradient_color_4 = '#abb100'
+gradient_color_5 = '#87ca3c'
+gradient_color_6 = '#5edf7e'
+gradient_color_7 = '#28f1bc'
+gradient_color_8 = '#00fff3'
+
+# rainbow 3
+# gradient_color_1 = '#98c379'
+# gradient_color_2 = '#b6b660'
+# gradient_color_3 = '#d3a655'
+# gradient_color_4 = '#ea945c'
+# gradient_color_5 = '#fa8173'
+# gradient_color_6 = '#fc7293'
+# gradient_color_7 = '#ec6fb9'
+# gradient_color_8 = '#c678dd'

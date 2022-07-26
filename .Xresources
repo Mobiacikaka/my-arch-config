@@ -76,11 +76,11 @@ rofi.fixed-num-lines: true
 rofi.hide-scrollbar: true
 
 !! URxvt Appearance
-URxvt.font: xft:Fira Code:pixelsize=18,xft:WenQuanYi Zen Hei Mono:pixelsize=18
+URxvt.font: xft:DejaVu Sans Mono:pixelsize=18,xft:WenQuanYi Zen Hei Mono:pixelsize=18
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
 URxvt.geometry: 92x24
-!URxvt.internalBorder: 24
+URxvt.internalBorder: 0
 URxvt.cursorBlink: true
 URxvt.cursorColor: cyan
 URxvt.cursorUnderline: false
@@ -97,10 +97,11 @@ URxvt.iso14755: false
 ! URxvt.perl-ext-common: ...,keyboard-select
 ! URxvt.keysym.Escape:   perl:keyboard-select:activate
 
-URxvt.perl-ext-common: default,resize-font,clipboard,tabbedex
+URxvt.perl-ext-common: default,resize-font,clipboard,tabbedex,fullscreen
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 !URxvt.keysym.Control-Shift-t: perl:tabbedex:new_tab
 !URxvt.keysym.Shift-Right: perl:tabbedex:next_tab
 !URxvt.keysym.Shift-Left: perl:tabbedex:prev_tab
 URxvt.inputMethod: fcitx
+urxvt*keysym.F11: perl:fullscreen:switch
