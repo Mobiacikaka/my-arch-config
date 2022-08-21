@@ -6,7 +6,7 @@ font pango:Fira Code 13
 include $HOME/.config/i3/config.d/general.conf
 include $HOME/.config/i3/config.d/colorscheme.conf
 include $HOME/.config/i3/config.d/workspace.conf
-# include $HOME/.config/i3/config.d/mode_gaps.conf
+include $HOME/.config/i3/config.d/mode_gaps.conf
 include $HOME/.config/i3/config.d/mode_resize.conf
 include $HOME/.config/i3/config.d/mode_system.conf
 include $HOME/.config/i3/config.d/mode_workspace.conf

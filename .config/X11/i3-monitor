@@ -19,6 +19,3 @@ else
 	i3-msg workspace "0:Zero"
 	i3-msg focus output right
 fi
-
-$HOME/.config/X11/scrnconfig
-$HOME/.config/X11/kbconfig

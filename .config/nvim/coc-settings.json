@@ -14,12 +14,10 @@
 
 	"markdownlint.config": {
 		"default": false,
-		// "MD025": {
-		// 	"allowed_elements": [ "font", "li", "table", "tr", "td" ]
-		// }
 	},
 
 	"languageserver": {
+
 		"ccls": {
 			"command": "ccls",
 			"filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
@@ -30,17 +28,6 @@
 				}
 			}
 		}, 
-
-		// "golang": {
-		// 	"command": "gopls",
-		// 	"rootPatterns": ["go.mod"],
-		// 	"filetypes": ["go"]
-		// },
-
-		// "digestif": {
-		// 	"command": "digestif",
-		// 	"filetypes": ["tex", "plaintex", "context"]
-		// },
 
 		"cmake": {
 			"command": "cmake-language-server",

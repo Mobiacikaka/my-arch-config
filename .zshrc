@@ -12,7 +12,7 @@ zmodload zsh/complist
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+HYPHEN_INSENSITIVE="true"
 
 # Uncomment one of the following lines to change the auto-update behavior
 zstyle ':omz:update' mode disabled  # disable automatic updates
@@ -71,7 +71,7 @@ alias ls='ls --color=tty -l --time-style=long-iso -h'
 
 # export ALL_PROXY=http://127.0.0.1:7890
 export GOPATH=/home/justin/App/go
-export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git -I'
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git .vspreview -I'
 
 # bindkey -v
 bindkey '^j' down-line-or-beginning-search

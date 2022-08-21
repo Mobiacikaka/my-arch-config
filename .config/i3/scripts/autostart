@@ -1,6 +1,9 @@
 #!/bin/sh
 
-$HOME/.config/X11/i3-monitor
+# $HOME/.config/X11/i3-monitor
+$HOME/.config/X11/scrnconfig
+$HOME/.config/X11/kbconfig
+$HOME/.config/X11/tpconfig
 $HOME/.config/i3/scripts/feh-background
 
 rprocesses=$(ps -aux)
@@ -12,3 +15,4 @@ rprocesses=$(ps -aux)
 [ -z "$(echo $rprocesses | grep clash)" ] && clash -d $HOME/App/clash/xtunnel/ &
 [ -z "$(echo $rprocesses | grep unclutter)" ] && unclutter &
 # [ -z "$(echo $rprocesses | grep tzclock)" ] && tzclock &
+[ -z "$(echo $rprocesses | grep udiskie)" ] && udiskie &

@@ -97,7 +97,7 @@ URxvt.iso14755: false
 ! URxvt.perl-ext-common: ...,keyboard-select
 ! URxvt.keysym.Escape:   perl:keyboard-select:activate
 
-URxvt.perl-ext-common: default,resize-font,clipboard,tabbedex,fullscreen
+URxvt.perl-ext-common: default,resize-font,clipboard,fullscreen
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 !URxvt.keysym.Control-Shift-t: perl:tabbedex:new_tab
