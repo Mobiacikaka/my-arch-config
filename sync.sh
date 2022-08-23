@@ -23,6 +23,7 @@ sync .config yt-dlp
 sync .config zathura
 sync .config neofetch
 sync .config picom.conf
+sync .config dunst
 sync ".local/bin" translate 
 sync ".local/bin" sxcv
 sync "./" ".zshrc"
