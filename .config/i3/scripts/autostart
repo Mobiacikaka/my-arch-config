@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $HOME/.config/X11/i3-monitor
+$HOME/.config/X11/i3-monitor
 $HOME/.config/X11/scrnconfig
 $HOME/.config/X11/kbconfig
 $HOME/.config/X11/tpconfig

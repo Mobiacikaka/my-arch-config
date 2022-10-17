@@ -12,18 +12,18 @@ let g:fzf_action = {
 " explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
-map <C-p> :lcd %:p:h<CR>:Files<CR>
-map <Leader>f :GFiles<CR>
-map <Leader>b :Buffers<CR>
-nnoremap <Leader>g :Rg<CR>
-nnoremap <Leader>t :Tags<CR>
-nnoremap <Leader>m :Marks<CR>
+nmap <C-p> :lcd %:p:h<CR>:Files<CR>
+nmap <Leader>gf :GFiles<CR>
+nmap <Leader>bf :Buffers<CR>
+nmap <Leader>rg :Rg<CR>
+nmap <Leader>tg :Tags<CR>
+nmap <Leader>mk :Marks<CR>
 
 
 let g:fzf_tags_command = 'ctags -R'
 " Border color
-" let g:fzf_layout = {'down':'~40%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
-let g:fzf_layout = { 'down': '~40%' }
+let g:fzf_layout = {'down':'~40%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
+" let g:fzf_layout = { 'down': '~40%' }
 
 let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
 " let $FZF_DEFAULT_COMMAND="rg --files --hidden"

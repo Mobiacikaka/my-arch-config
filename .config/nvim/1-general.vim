@@ -1,4 +1,5 @@
 " general settings of nvim
+set mouse=
 set number
 set encoding=utf-8
 set autoread
@@ -8,7 +9,7 @@ set clipboard=unnamedplus
 set nowrap
 
 " set fold configuration
-set foldmethod=syntax
+set foldmethod=indent
 set foldlevelstart=99
 
 set nohlsearch

@@ -3,47 +3,49 @@ icons = "awesome"
 [theme]
 name = "solarized-dark"
 [theme.overrides]
-separator = " "
+separator = ""
 # separator_fg = "#654321"
 idle_bg = "#2C323C"
 idle_fg = "#FF5072"
 
 # [[block]]
 # block = "focused_window"
-# max_width = 30
+# max_width = 20
 # show_marks = "visible"
+# format = "{combo}"
 # [block.theme_overrides]
-# idle_bg = "#003400"
-# idle_fg = "#efef00"
+# idle_bg = "#FF5072"
+# idle_fg = "#FFE0E6"
+# separator = ""
 
 [[block]]
 block = "time"
 interval = 5
 format = "%a %m/%d %R"
 
-[[block]]
-block = "net"
-device = "enp0s31f6"
-hide_inactive = true
-hide_missing = true
-interval = 5
-format = "{ip}"# {speed_up} {speed_down}"
+# [[block]]
+# block = "net"
+# device = "enp0s31f6"
+# hide_inactive = true
+# hide_missing = true
+# interval = 5
+# format = "{ip}"# {speed_up} {speed_down}"
 
-[[block]]
-block = "net"
-device = "enp0s13f0u1u4"
-hide_inactive = true
-hide_missing = true
-interval = 5
-format = "{ip}"# {speed_up} {speed_down}"
+# [[block]]
+# block = "net"
+# device = "enp0s13f0u1u4"
+# hide_inactive = true
+# hide_missing = true
+# interval = 5
+# format = "{ip}"# {speed_up} {speed_down}"
 
-[[block]]
-block = "net"
-device = "wlan0"
-hide_inactive = true
-hide_missing = true
-interval = 5
-format = "{ssid}"
+# [[block]]
+# block = "net"
+# device = "wlan0"
+# hide_inactive = true
+# hide_missing = true
+# interval = 5
+# format = "{ssid}"
 
 [[block]]
 block = "disk_space"
@@ -54,7 +56,7 @@ unit = "GB"
 interval = 20
 warning = 20.0
 alert = 10.0
-format = "{icon} root {available}"
+format = "{icon} root {available}/{total}"
 
 [[block]]
 block = "disk_space"
@@ -65,7 +67,7 @@ unit = "GB"
 interval = 20
 warning = 20.0
 alert = 10.0
-format = "{icon} home {available}"
+format = "{icon} home {available}/{total}"
 
 [[block]]
 block = "memory"
@@ -74,9 +76,9 @@ display_type = "memory"
 format_mem = "{mem_used} /{mem_total}"
 format_swap = "{swap_used_percents}"
 
-[[block]]
-block = "cpu"
-interval = 3
+# [[block]]
+# block = "cpu"
+# interval = 3
 
 # [[block]]
 # block = "load"

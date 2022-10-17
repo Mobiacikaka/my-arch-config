@@ -15,30 +15,29 @@ tnoremap KK <C-\><C-n>
 " downward line when wrap
 nnoremap j gj
 nnoremap k gk
+nnoremap 0 g0
+nnoremap $ g$
+vnoremap j gj
+vnoremap k gk
 
 """"""""""""""""""""""""
 "  Windows Management  "
 """"""""""""""""""""""""
 " better window navigation
-tnoremap <A-h> <C-\><C-N><C-w>h
-tnoremap <A-j> <C-\><C-N><C-w>j
-tnoremap <A-k> <C-\><C-N><C-w>k
-tnoremap <A-l> <C-\><C-N><C-w>l
-inoremap <A-h> <C-\><C-N><C-w>h
-inoremap <A-j> <C-\><C-N><C-w>j
-inoremap <A-k> <C-\><C-N><C-w>k
-inoremap <A-l> <C-\><C-N><C-w>l
 nnoremap <A-h> <C-w>h
 nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
+
+" window concentration
+nnoremap = <C-w>=
+nnoremap <A-w> <C-w>\|
 
 " better window movement
 nnoremap <A-S-h> <C-w>H
 nnoremap <A-S-j> <C-w>J
 nnoremap <A-S-k> <C-w>K
 nnoremap <A-S-l> <C-w>L
-nnoremap TT <C-w>T
 
 " tab in normal mode will move to next tab
 nnoremap <TAB> gt
@@ -58,26 +57,11 @@ nnoremap <A-S-Right>	:vertical resize +2<CR>
 " Alternate way to quit
 nnoremap <C-Q> :SClose<CR>
 
-" Better tabbing
-vnoremap < <v
-vnoremap > >v
 
 """"""""""""""""""""
 "    Leader Map    "
 """"""""""""""""""""
-" Open split more faster
-nnoremap <silent> <leader>tn :tabnew<CR>
-nnoremap <silent> <leader>vn :vnew<CR>
-nnoremap <silent> <leader>sn :new<CR>
-nnoremap <silent> <leader>te :Texplore<CR>
-nnoremap <silent> <leader>ve :Vexplore<CR>
-nnoremap <silent> <leader>se :Sexplore<CR>
-
-" Open terminal
-nnoremap <silent> <leader>tt :tabnew<CR>:terminal<CR>
-nnoremap <silent> <leader>vt :vnew<CR>:terminal<CR>
-nnoremap <silent> <leader>st :new<CR>:terminal<CR>
-
+nmap <silent> <leader>tm :tabnew<CR>:terminal<CR>
 
 """"""""""""""""""""
 "		Nop		   "

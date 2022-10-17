@@ -1,3 +1,5 @@
 #!/usr/bin/sh
 
-notify-send -u low "translation" "$(xsel -o | trans -show-languages n -show-translation-phonetics n -indent 1 -t zh -no-ansi -show-prompt-message n -no-theme -e google)"
+selection="$(xsel -o)"
+translation="$(echo "$selection" | trans -indent 1 -t zh -no-ansi -e google -x http://127.0.0.1:7890)"
+notify-send -u low "Translation" "$translation"
