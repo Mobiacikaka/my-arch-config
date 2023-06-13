@@ -12,7 +12,7 @@ set nowrap
 set foldmethod=indent
 set foldlevelstart=99
 
-set nohlsearch
+" set nohlsearch
 
 set autoindent
 set smartindent

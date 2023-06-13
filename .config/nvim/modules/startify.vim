@@ -10,6 +10,7 @@ let g:startify_bookmarks = [
 			\ { 'c': '~/.config/i3/config' },
 			\ { 'i': '~/.config/nvim/init.vim' },
 			\ { 'm': '~/.config/mpv/mpv.conf' },
+			\ { 't': '~/Desktop/TODO.md' },
             \ ]
 
 let g:startify_session_autoload = 1
@@ -37,6 +38,6 @@ let g:startify_enable_unsafe = 0
 "   \ ]
 
  let g:startify_custom_header =
-	\ startify#pad(split(system('toilet -f future VIM2022'), "\n"))
+	\ startify#pad(split(system('toilet -f future NEOVIM 2022'), "\n"))
 	" \ startify#pad(split(system('cat $HOME/Desktop/banner-dd'), "\n"))
 	" \ startify#pad(split(system('figlet -f 3D-ASCII -w 200 "VIM2022"'), "\n"))

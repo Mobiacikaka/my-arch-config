@@ -2,3 +2,4 @@
 xset s off
 xset -dpms
 xset s noblank
+notify-send "i3-wm" "screen configured"

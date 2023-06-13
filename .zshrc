@@ -7,7 +7,7 @@ ZSH_THEME="simple"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
-CASE_SENSITIVE="false"
+CASE_SENSITIVE="true"
 zmodload zsh/complist
 
 # Uncomment the following line to use hyphen-insensitive completion.
@@ -38,7 +38,7 @@ zstyle ':omz:update' mode disabled  # disable automatic updates
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-DISABLE_UNTRACKED_FILES_DIRTY="true"
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 plugins=(git)
 
@@ -66,9 +66,12 @@ alias c='clear'
 alias uu=udiskie-umount
 alias um=udiskie-mount
 alias less='less -r'
-alias ls='ls --color=tty -l --time-style=long-iso -h'
+# alias ls='ls --color=tty -l --time-style=long-iso -h'
 alias ytm='yt-dlp -f 'ba' --add-chapters'
 alias yt='yt-dlp --add-chapters'
+# alias tmuxsys='systemd-run --scope --user tmux'
+alias ssh='TERM=xterm-256color ssh'
+alias ync='yay --noconfirm'
 
 # export ALL_PROXY=http://127.0.0.1:7890
 export GOPATH=/home/justin/App/go

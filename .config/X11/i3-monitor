@@ -11,11 +11,15 @@ then
 	xrandr --output "$eDP" --auto --primary
 	echo only eDP
 else
-	xrandr	--output "$HDMI" --mode 3840x2160 --scale 0.7 --primary --pos 0x0 \
-			--output "$eDP" --auto --left-of "$HDMI"
+	xrandr	--output "$eDP" --mode 1920x1080 --scale 1.0 --pos 0x0 \
+			--output "$HDMI" --mode 3840x2160 --scale 0.7 --primary --pos 1920x1080
 	echo eDP with HDMI
 
-	i3-msg focus output left
+	i3-msg focus output primary
+	i3-msg focus output next
 	i3-msg workspace "0:Zero"
-	i3-msg focus output right
+	i3-msg focus output next
+	i3-msg workspace "1:I: Melina"
 fi
+
+notify-send "i3-wm" "workspace configured"

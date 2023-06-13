@@ -1,6 +1,6 @@
 !!source ~/.cache/wal/colors.sh 
 Xcursor.size : 32
-Xcursor.theme: Oreo Spark Violet Cursors
+Xcursor.theme: Numix-Cursor
 Xft.dpi: 96
 
 ! Dracula Xresources palette

@@ -295,7 +295,7 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#222222"
     foreground = "#DDDDDD"
-    timeout = 15
+    timeout = 30
     # Icon for notifications with low urgency, uncomment to enable
     #icon = /path/to/icon
 	fullscreen = delay

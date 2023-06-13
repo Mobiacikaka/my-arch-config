@@ -1,5 +1,27 @@
 #!/usr/bin/sh
 
 selection="$(xsel -o)"
-translation="$(echo "$selection" | trans -indent 1 -t zh -no-ansi -e google -x http://127.0.0.1:7890)"
+dict="-dictionary"
+ori="Y"
+if [[ "$selection" = *" "* ]]; then
+	dict=""
+	ori="n"
+fi
+translation="$(\
+trans \
+-show-original $ori \
+-show-original-phonetics Y \
+-show-translation Y \
+-show-translation-phonetics n \
+-show-prompt-message n \
+-no-theme \
+-indent 2 \
+-t zh \
+-no-ansi \
+-e google \
+-x http://127.0.0.1:7890 \
+$dict \
+"$selection" \
+)"
+
 notify-send -u low "Translation" "$translation"

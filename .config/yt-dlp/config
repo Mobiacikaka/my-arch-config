@@ -1,3 +1,3 @@
 --proxy 127.0.0.1:7890
--o $HOME/Downloads/videos/youtube-dl/%(uploader)s_%(title)s.%(ext)s
+-o $HOME/Downloads/videos/youtube-dl/%(uploader)s/%(fulltitle)s.%(ext)s
 --add-chapters

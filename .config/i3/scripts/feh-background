@@ -1,4 +1,2 @@
 #!/bin/sh
-# feh -z --bg-fill /home/justin/Pictures/backgrounds/94494258_p0.png
-# feh -z --bg-fill /home/justin/Pictures/backgrounds/94975595_p0.png
-feh -z --bg-fill /home/justin/Pictures/backgrounds/xilmo/78910882_p0.png
+feh -z --bg-fill /home/justin/.config/i3/background.png
